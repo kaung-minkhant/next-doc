@@ -1,4 +1,5 @@
 import SelectedLayoutSegment from "@/component/SelectedLayoutSegment";
+import Link from "next/link";
 
 export default function DashboardLayout({
   children,
@@ -15,6 +16,7 @@ export default function DashboardLayout({
         <p>Dashboard layout</p>
         <SelectedLayoutSegment />
       </div>
+      <Link href={"/dashboard/subscriber"}>Go to subscriber stats</Link>
       {view}
       {children}
       {stats}
